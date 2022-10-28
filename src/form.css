@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container {
+  width: 450px;
+  padding: 10px 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 7%);
+  border-radius: 5px;
+  max-width: 100%;
+  margin: 1rem auto;
+}
+.header {
+  padding: 10px 40px;
+  margin-bottom: 1rem;
+}
+.header h2 {
+  margin-bottom: 3rem;
+}
+
+.header h1 {
+  margin-top: 1.25rem;
+}
+.form {
+  padding: 30px 20px;
+  width: 100%;
+  margin-top: -1.75rem;
+}
+.form-contorl {
+  margin-bottom: 2rem;
+  padding: 10px 20px;
+  position: relative;
+}
+.form-contorl label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 20px;
+}
+.form-contorl input {
+  border: 2px solid #f0f0f0;
+  padding: 20px 25px;
+  text-align: left;
+  font-size: 18px;
+  display: block;
+  border-radius: 5px;
+  width: 100%;
+  font-family: inherit;
+}
+.form-contorl.success input {
+  border-color: #2ecc71;
+}
+.form-contorl.success .fa-solid.fa-circle-check {
+  color: #2ecc71;
+  visibility: visible;
+  font-size: 20px;
+  top: 60px;
+}
+
+.form-contorl.error input {
+  border-color: #e74c3c;
+}
+
+.form-contorl.error small {
+  visibility: visible;
+  color: #e74c3c;
+}
+.form-contorl.error .fa-solid.fa-circle-exclamation {
+  color: #e74c3c;
+  visibility: visible;
+  font-size: 20px;
+}
+.form-contorl .fa-solid.fa-circle-exclamation,
+.form-contorl .fa-solid.fa-circle-check {
+  position: absolute;
+  top: 50px;
+  right: 30px;
+  visibility: hidden;
+}
+.form-contorl small {
+  position: absolute;
+  bottom: -10px;
+  visibility: hidden;
+}
+.form button {
+  display: block;
+  padding: 14px;
+  border-radius: 5px;
+  font-size: 18px;
+  text-transform: capitalize;
+  border: 1px solid transparent;
+  color: white;
+  background-color: #4e0acc;
+  width: 92%;
+  margin-left: 15px;
+  margin-top: 1rem;
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: bold;
+}
+.form-sent {
+  text-align: center;
+  background-color: #00916e;
+  width: 250px;
+  margin: 0 auto;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  display: none;
+  text-transform: capitalize;
+  letter-spacing: 1.25px;
+  font-size: 16px;
+}
+
+.show {
+  display: block;
+}
+.showpass {
+  position: absolute;
+  top: 60px;
+  right: 30px;
+  cursor: pointer;
+}
+
+/* agreement */
+#check {
+  border: 1px solid #f0f0f0;
+}
+.terms {
+  color: #4e0acc;
+  font-weight: 700;
+}
+.agree {
+  margin-left: 1.5rem;
+}
+.agree label {
+  margin-left: 0.5rem;
+  font-size: 18px;
+}
+.already {
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/7257705f93.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="form.css" />
+    <title>form validation</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>Fiber</h2>
+        <h1>Create Your Fiber Account</h1>
+      </div>
+      <div class="form-sent">
+        <h3>form submitted!</h3>
+      </div>
+      <form action="#" class="form" id="form">
+        <div class="form-contorl">
+          <label for="username">Your Name</label>
+          <input type="text" id="username" placeholder="John Doe" />
+          <i class="fa-solid fa-circle-check"></i>
+
+          <i class="fa-solid fa-circle-exclamation"></i>
+
+          <small>Something went wrong</small>
+        </div>
+        <div class="form-contorl">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" placeholder="johndoe@gmail.com" />
+          <i class="fa-solid fa-circle-check"></i>
+
+          <i class="fa-solid fa-circle-exclamation"></i>
+
+          <small>Something went wrong</small>
+        </div>
+        <div class="form-contorl">
+          <label for="password">password</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="At least 8 characters"
+          />
+          <img src="../Assets/hide password.svg" class="showpass" alt="" />
+
+          <i class="fa-solid fa-circle-check"></i>
+
+          <i class="fa-solid fa-circle-exclamation"></i>
+
+          <small>Something went wrong</small>
+        </div>
+
+        <div class="agree form-control">
+          <input type="checkbox" id="check" />
+          <label for="agree"
+            >By creating an account on Fiber , you agree to the
+            <a href="#" class="terms">Terms & Conditions.</a></label
+          >
+        </div>
+        <button type="submit">create fiber account</button>
+        <div class="already">
+          <p>Already have an account? <a href="#">Sign in</a></p>
+        </div>
+      </form>
+    </div>
+
+    <script src="form.js"></script>
+  </body>
+</html>
